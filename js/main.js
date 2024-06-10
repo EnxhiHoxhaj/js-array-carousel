@@ -26,13 +26,13 @@ for (let i = 0; i < imgCarousel.length; i++) { // estrapolare le immagini del mi
     // inserire le immagini nel mio div
 
     imgContainer.innerHTML += carouselContent;
-
-    console.log(imgContainer);
 }
-
 
 // inserire la classe active del CSS al primo elemento della lista 
 
+const items= document.getElementsByClassName("item");
+items[0].classList.add("active")
+console.log(items[0]);
 // creare e gestire l'evento click
 
 // far spostare la classe active in modo crescente
