@@ -32,8 +32,11 @@ for (let i = 0; i < imgCarousel.length; i++) { // estrapolare le immagini del mi
 
 const items= document.getElementsByClassName("item");
 items[0].classList.add("active")
-console.log(items[0]);
 // creare e gestire l'evento click
+// seleziona le frecce
+const upArrow = document.querySelector(".fa-circle-chevron-up");
+const downArrow = document.querySelector(".fa-circle-chevron-down");
+console.log(upArrow, downArrow);
 
 // far spostare la classe active in modo crescente
 
