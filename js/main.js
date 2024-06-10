@@ -40,21 +40,28 @@ const downArrow = document.querySelector(".fa-circle-chevron-down");
 upArrow.addEventListener( "click",
     function() {
 
-        if(activeImg < imgCarousel.length - 1) {
+        if(activeImg < imgCarousel.length - 1) { // far spostare la classe active in modo decrescente
         //togliere la classe active dove non necessario
         items[activeImg].classList.remove("active");
         // far spostare la classe active in modo crescente
         activeImg= activeImg + 1;
-
         items[activeImg].classList.add("active");
         }
-
     }
 )
 
 // creare e gestire l'evento secondo click
-
-// far spostare la classe active in modo decrescente
+downArrow.addEventListener( "click",
+    function() {
+        if(activeImg < imgCarousel.length + 1) { // far spostare la classe active in modo decrescente
+            //togliere la classe active dove non necessario
+            items[activeImg].classList.remove("active");
+            // far spostare la classe active in modo crescente
+            activeImg= activeImg - 1;
+            items[activeImg].classList.add("active");
+            }
+    }
+)
 
 // stampare in console
 
