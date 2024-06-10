@@ -10,15 +10,17 @@ const imgCarousel = [
 
 //inserire su JS le immagini che voglio far scorrere
 
-for (let i = 0; i < imgCarousel.length; i++) {
+
+for (let i = 0; i < imgCarousel.length; i++) { // estrapolare le immagini del mio array
     let itemCarousel = imgCarousel[i];
-    console.log(itemCarousel);
+
+    // creare il div di inserimento delle immagini
+    let carouselContent = `        
+            <div class="item">
+                <img src="${itemCarousel}" >
+            </div>`;
+    console.log(carouselContent);
 }
-
-// estrapolare le immagini del mio array
-
-// creare il div di inserimento delle immagini
-
 // inserire le immagini nel mio div
 
 // inserire la classe active del CSS al primo elemento della lista 
