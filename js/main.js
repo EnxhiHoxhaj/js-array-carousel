@@ -29,14 +29,19 @@ for (let i = 0; i < imgCarousel.length; i++) { // estrapolare le immagini del mi
 }
 
 // inserire la classe active del CSS al primo elemento della lista 
-
+let activeImg= 0;
 const items= document.getElementsByClassName("item");
-items[0].classList.add("active")
+items[activeImg].classList.add("active")
 // creare e gestire l'evento click
 // seleziona le frecce
 const upArrow = document.querySelector(".fa-circle-chevron-up");
 const downArrow = document.querySelector(".fa-circle-chevron-down");
-console.log(upArrow, downArrow);
+ //click
+upArrow.addEventListener( "click",
+    function() {
+
+    }
+)
 
 // far spostare la classe active in modo crescente
 
