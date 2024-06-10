@@ -3,3 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container {
+    width: 60%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.item{
+    height: 400px;
+    width: 800px;
+    display: none;
+    text-align: center;
+    background-color: rgb(119, 136, 153, 0.75);
+}
+
+.item.active {
+    display: block;
+}
+
+.item > img {
+   height: 100%;
+}
