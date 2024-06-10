@@ -11,7 +11,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .item{
@@ -20,6 +19,7 @@
     display: none;
     text-align: center;
     background-color: rgb(119, 136, 153, 0.75);
+
 }
 
 .item.active {
@@ -28,4 +28,15 @@
 
 .item > img {
    height: 100%;
+}
+
+.arrow {
+    position: relative;
+}
+
+.click {
+    font-size: 30px;
+    position: absolute;
+    background-color: transparent;
+    color:  rgb(119, 136, 153, 0.5);
 }
