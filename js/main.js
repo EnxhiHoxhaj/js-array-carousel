@@ -1,5 +1,13 @@
 //Creare un carosello che scorra le immagini caricate
 
+const imgCarousel = [
+    "img/01.webp",
+    "img/02.webp",
+    "img/03.webp",
+    "img/04.webp",
+    "img/05.webp",
+]
+
 //inserire su JS le immagini che voglio far scorrere
 
 // estrapolare le immagini del mio array
