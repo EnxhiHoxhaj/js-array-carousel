@@ -39,12 +39,16 @@ const downArrow = document.querySelector(".fa-circle-chevron-down");
  //click
 upArrow.addEventListener( "click",
     function() {
+
+        if(activeImg < imgCarousel.length - 1) {
         //togliere la classe active dove non necessario
         items[activeImg].classList.remove("active");
         // far spostare la classe active in modo crescente
         activeImg= activeImg + 1;
 
         items[activeImg].classList.add("active");
+        }
+
     }
 )
 
