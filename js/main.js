@@ -8,8 +8,11 @@ const imgCarousel = [
     "img/05.webp",
 ]
 
-//inserire su JS le immagini che voglio far scorrere
+// seleziono il container dal DOM
 
+const imgContainer = document.querySelector(".container");
+
+//inserire su JS le immagini che voglio far scorrere
 
 for (let i = 0; i < imgCarousel.length; i++) { // estrapolare le immagini del mio array
     let itemCarousel = imgCarousel[i];
@@ -20,8 +23,13 @@ for (let i = 0; i < imgCarousel.length; i++) { // estrapolare le immagini del mi
                 <img src="${itemCarousel}" >
             </div>`;
     console.log(carouselContent);
+    // inserire le immagini nel mio div
+
+    imgContainer.innerHTML += carouselContent;
+
+    console.log(imgContainer);
 }
-// inserire le immagini nel mio div
+
 
 // inserire la classe active del CSS al primo elemento della lista 
 
@@ -35,4 +43,4 @@ for (let i = 0; i < imgCarousel.length; i++) { // estrapolare le immagini del mi
 
 // stampare in console
 
-// Stampare in pagina
+// stampa in pagina
