@@ -32,6 +32,7 @@
 
 .arrow {
     position: relative;
+    cursor: pointer;
 }
 
 .click {
