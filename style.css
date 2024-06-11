@@ -14,8 +14,8 @@
 }
 
 .item{
-    height: 400px;
-    width: 800px;
+    height: 300px;
+    width: 650px;
     display: none;
     text-align: center;
     background-color: rgb(119, 136, 153, 0.75);
@@ -27,7 +27,8 @@
 }
 
 .item > img {
-   height: 100%;
+   max-width: 800px;
+   max-height: 300px;
 }
 
 .arrow {

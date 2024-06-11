@@ -40,29 +40,26 @@ const downArrow = document.querySelector(".fa-circle-chevron-down");
 upArrow.addEventListener( "click",
     function() {
 
-        if(activeImg < imgCarousel.length - 1) { // far spostare la classe active in modo decrescente
+        if(activeImg < imgCarousel.length - 1) { // far spostare la classe active in modo crescente
         //togliere la classe active dove non necessario
         items[activeImg].classList.remove("active");
         // far spostare la classe active in modo crescente
-        activeImg= activeImg + 1;
+        activeImg = activeImg + 1;
         items[activeImg].classList.add("active");
         }
     }
-)
-
+);
 // creare e gestire l'evento secondo click
+
 downArrow.addEventListener( "click",
     function() {
-        if(activeImg < imgCarousel.length + 1) { // far spostare la classe active in modo decrescente
-            //togliere la classe active dove non necessario
-            items[activeImg].classList.remove("active");
-            // far spostare la classe active in modo crescente
-            activeImg= activeImg - 1;
-            items[activeImg].classList.add("active");
-            }
+        if(activeImg > 0) { // far spostare la classe active in modo decrescente
+        //togliere la classe active dove non necessario
+        items[activeImg].classList.remove("active");
+        // far spostare la classe active in modo decrescente
+        activeImg= activeImg - 1;
+        items[activeImg].classList.add("active"); 
+        }
     }
-)
+);
 
-// stampare in console
-
-// stampa in pagina
